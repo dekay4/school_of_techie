@@ -32,7 +32,7 @@ if (isset($_POST['email_field']) && isset($_POST['pwd_field'])) {
     } else {
         //Parameters missing
         $json_array['status'] = "failure";
-        $json_array['msg'] = "Email Is Already Exist !!!";
+        $json_array['msg'] = "Email or Password is Incorrect !!!";
         $json_response = json_encode($json_array);
         echo $json_response;
     }
